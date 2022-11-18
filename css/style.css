@@ -339,6 +339,10 @@ main {
         flex-flow: column;
         height: 100%;
     }
+
+    .catalogo{
+        height: 100%
+    }
     .filtro{
         display: none;
     }
