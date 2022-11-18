@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: rgb(207, 158, 21);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+
+/*estilos generales del body y el header*/
+
+.logo-mobile{
+    text-shadow: 3px 3px 2px black;
+    font-size: 2rem;
+}
+
+body{
+    background: rgb(76,42,68);
+    background: linear-gradient(90deg, rgba(76,42,68,1) 14%, rgba(2,22,58,1) 49%, rgba(76,42,68,1) 87%);
+    
+}
+
+.paginas-navegador ul {
+    display: flex;
+    justify-content: start;
+    flex-flow: row nowrap;
+  }
+
+.paginas-navegador ul li{
+    list-style: none;
+    padding: 10px;
+    background-color:rgb(75, 45, 133) ;
+}
+
+/*header diseñado con flex*/
+
+header{
+    background-color: rgb(75, 45, 133);
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky
+}
+
+main {
+    margin: 30px;
+    gap: 10px;
+    
+}
+
+
+
+/* estilos para el login*/
+
+.menu-logueo{
+    top: 0;
+    z-index: 2;    
+    text-decoration: none;
+}
+
+.menu-logueo ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-logueo ul li{
+    background-color: rgb(75, 45, 133);
+    margin: 10px;
+    padding: 25px;
+    border-style: none;
+    list-style: none;
+    text-shadow: 2px 2px 2px black;
+}
+.menu-logueo ul li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+
+
+/*menu de navegacion*/ 
+
+.menu{
+    top: 0;
+    z-index: 2;    
+    text-decoration: none;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu ul li{
+    background-color: rgb(75, 45, 133);
+    margin: 10px;
+    padding: 20px;
+    border-style: hidden;
+    text-shadow: 2px 2px 2px black;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+
+.menu ul li:hover{
+    transform: scale(1.1);
+    text-shadow: 3px 3px 2px black;
+    transition: 1s;
+}
+
+.busqueda{
+    text-align: right;
+    padding: 10px;
+}
+
+/*etiqueta general para titulos y subtitulos*/
+
+.titulo{
+    text-align: center;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+
+/* estilos del formulario*/
+
+.formulario {
+    margin: 50px 0px 50px 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formulario div{
+    padding: 10px;
+}
+/* estilos del footer*/
+
+
+.pie-pagina{
+    background-color: rgb(75, 45, 133);
+    text-decoration: underline;
+    list-style: none;
+    font-weight: bold;
+}
+.pie-pagina li{
+    padding: 10px;
+}
+
+/*estilos del html noticias*/
+
+
+/*HTML diseñado con flex y grid*/
+
+.filtro ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filtro ul li{
+    list-style: none;
+}
+
+.noticias{
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr ;
+    grid-template-areas:
+        "tituloUno textoNoticiasUno"
+        "imgNoticiasUno textoNoticiasUno"  
+        "tituloDos textoNoticiasDos "
+        "imgNoticiasDos textoNoticiasDos";
+    gap: 20px;
+}
+
+
+
+.texto-noticias-uno{
+    padding: 0px 50px 20px 50px;
+    text-align: justify;
+    grid-area: textoNoticiasUno;
+}
+
+.texto-noticias-dos{
+    padding: 0px 50px 20px 50px;
+    text-align: justify;
+    grid-area: textoNoticiasDos;
+}
+.img-noticias-uno{
+    text-align: center;
+    grid-area: imgNoticiasUno;
+}
+.img-noticias-dos{
+    text-align: center;
+    grid-area: imgNoticiasDos;
+}
+
+.titulo-uno{
+    grid-area: tituloUno;
+}
+
+.titulo-dos{
+    grid-area: tituloDos;
+}
+
+
+
+/* etiquetas del html mi-perfil*/
+
+
+.foto-perfil{
+    border-radius: 50%;
+    width: 50%;
+    text-align: center;
+}
+
+.nombre-perfil{
+    text-align: center;
+}
+.boton-editar{
+    text-decoration: underline;
+}
+
+
+/*etiquetas del html home*/
+
+.ver-mas{
+    text-decoration: none;
+}
+
+.ver-mas ul li{
+    display: inline-block;
+    background-color: rgb(65, 105, 179);
+    margin: 10px;
+    padding: 15px 10px 15px 10px;
+    border-style: solid;
+}
+
+.destacado{
+    padding: 10px;
+}
+
+
+/*etiquetas del html catalogo*/
+/*HTML diseñado con flex y grid*/
+
+
+.catalogo{
+    height: 900px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.1fr 0.1fr 0.5fr ;
+    grid-template-areas:
+        "img-manga-uno titulo-manga-uno"
+        "img-manga-uno categorias-manga-uno"  
+        "img-manga-uno manga-ejemplo-uno"
+        "img-manga-dos titulo-manga-dos"
+        "img-manga-dos categorias-manga-dos"
+        "img-manga-dos manga-ejemplo-dos";
+    gap: 20px;
+    
+}
+
+.manga-ejemplo-uno{
+    grid-area: manga-ejemplo-uno;
+}
+
+.manga-ejemplo-dos{
+    grid-area: manga-ejemplo-dos;
+}
+.img-manga-uno{
+    grid-area: img-manga-uno;
+    width: 150px;
+}
+.img-manga-dos{
+    grid-area: img-manga-dos;
+    width: 150px;
+}
+
+.titulo-manga-uno{
+    grid-area: titulo-manga-uno;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.titulo-manga-dos{
+    grid-area: titulo-manga-dos;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.categorias-manga-uno{
+    grid-area: categorias-manga-uno;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.categorias-manga-dos{
+    grid-area: categorias-manga-dos;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/*media query, desktop first*/
+
+
+@media screen and (max-width: 425px){
+
+
+    
+    header nav {
+        display: flex;
+    }
+
+    .menu ul {
+        flex-flow: column wrap;
+        align-items: center
+        ;
+    }
+
+    header .busqueda{
+        display: none;
+    }
+    
+    .noticias{
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+    .filtro{
+        display: none;
+    }
+
+    .paginas-navegador{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+    }
+
+    .pie-pagina{
+        display: none;
+    }
+
+    .menu-logueo{
+        display: none;
+    }
+}
