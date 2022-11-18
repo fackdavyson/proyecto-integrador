@@ -66,13 +66,13 @@ main {
 .menu-logueo ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .menu-logueo ul li{
     background-color: rgb(75, 45, 133);
     margin: 10px;
-    padding: 25px;
+    padding: 15px;
     border-style: none;
     list-style: none;
     text-shadow: 2px 2px 2px black;
@@ -91,18 +91,19 @@ main {
     top: 0;
     z-index: 2;    
     text-decoration: none;
+    display: flex;
+
 }
 .menu ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
 }
 
 .menu ul li{
     background-color: rgb(75, 45, 133);
-    margin: 10px;
-    padding: 20px;
+    padding: 15px;
     border-style: hidden;
     text-shadow: 2px 2px 2px black;
 }
@@ -120,6 +121,8 @@ main {
 .busqueda{
     text-align: right;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*etiqueta general para titulos y subtitulos*/
@@ -317,8 +320,9 @@ main {
 
 
 @media screen and (max-width: 425px){
-
-
+    * {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
     
     header nav {
         display: flex;
@@ -341,7 +345,9 @@ main {
     }
 
     .catalogo{
-        height: 100%
+        height: 100%;
+        justify-content: center;
+        
     }
     .filtro{
         display: none;
