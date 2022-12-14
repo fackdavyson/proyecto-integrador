@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* estilos index */
 
 main {
@@ -8,10 +7,6 @@ main {
         text-align: center;
         margin-bottom: 2rem;
       }
-=======
-
-main {
->>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     .imagen-destacado{
        @extend %flex-justify-center;
     }
@@ -42,11 +37,7 @@ main {
             }
         }
         li:hover{
-<<<<<<< HEAD
             background-color: rgb(41, 41, 133);
-=======
-            background-color: rgb(65, 105, 179);
->>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
         }
     }
     .destacado{
