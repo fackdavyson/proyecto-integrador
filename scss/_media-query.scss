@@ -44,6 +44,7 @@
         position: sticky;
     }
     .lista-favoritos{
+<<<<<<< HEAD
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr;
@@ -79,6 +80,20 @@
             grid-area: img-favorito-tres;
     
         }   
+=======
+
+        .img-favorito-uno{
+            width: 30%;
+        }
+        .img-favorito-dos{
+            width: 30%;
+        }
+        .img-favorito-tres{
+            width: 30%;
+        }
+        
+    }
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     .imagen-destacado{
         img{
             width: 30%;
@@ -86,8 +101,15 @@
     }
     
 }
+<<<<<<< HEAD
     footer{
             display: none;
+=======
+footer{
+    .pie-pagina{
+        display: none;
+    }
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     }
 }
 
@@ -113,7 +135,10 @@
             height: 100%;
         }
         
+<<<<<<< HEAD
         
+=======
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     }
     
 

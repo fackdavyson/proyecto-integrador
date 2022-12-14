@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 /* estilos mi-perfil */
+=======
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
 
 main{
     div{.foto-perfil{
@@ -21,6 +24,7 @@ main{
 }
 .lista-favoritos{
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 0.5fr 1fr;
     justify-content: start;
@@ -28,6 +32,16 @@ main{
     grid-template-areas: 
         "favorito-uno favorito-dos favorito-tres"
         "img-favorito-uno img-favorito-dos img-favorito-tres";
+=======
+    grid-template-columns: auto ;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-items: center;
+    grid-template-areas: 
+        "img-favorito-uno favorito-uno "
+        "img-favorito-dos favorito-dos "
+        "img-favorito-tres favorito-tres";
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     }
     .favorito-uno{
         grid-area: favorito-uno;

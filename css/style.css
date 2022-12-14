@@ -1,5 +1,8 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 /* estilos noticias */
+=======
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
 main .filtro ul {
   justify-content: space-evenly; }
 
@@ -32,6 +35,7 @@ main .noticias {
   main .noticias .titulo-dos {
     grid-area: tituloDos; }
   main .noticias div .foto-perfil {
+<<<<<<< HEAD
     border-radius: 50%;
     width: 100px;
     text-align: center; }
@@ -45,6 +49,20 @@ main {
   height: 100%; }
   main .foto-perfil {
     border-radius: 50%;
+=======
+    border-radius: 50%;
+    width: 100px;
+    text-align: center; }
+
+main .paginas-navegador {
+  display: inline-block;
+  position: relative; }
+
+main {
+  height: 100%; }
+  main .foto-perfil {
+    border-radius: 50%;
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     width: 20%;
     display: block;
     margin: 0 auto; }
@@ -54,11 +72,19 @@ main {
     font-size: 1rem; }
   main .lista-favoritos {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr;
     justify-content: start;
     align-items: center;
     grid-template-areas: "favorito-uno favorito-dos favorito-tres" "img-favorito-uno img-favorito-dos img-favorito-tres"; }
+=======
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-items: center;
+    grid-template-areas: "img-favorito-uno favorito-uno " "img-favorito-dos favorito-dos " "img-favorito-tres favorito-tres"; }
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
   main .favorito-uno {
     grid-area: favorito-uno; }
   main .favorito-dos {
@@ -75,6 +101,7 @@ main {
     width: 50%;
     grid-area: img-favorito-tres; }
 
+<<<<<<< HEAD
 /* estilos index */
 main .presentacion {
   font-family: Arial, Helvetica, sans-serif;
@@ -85,6 +112,11 @@ main .presentacion {
 main div .carousel-inner img {
   margin: auto; }
 
+=======
+main div .carousel-inner img {
+  margin: auto; }
+
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
 main .ver-mas {
   text-decoration: none; }
   main .ver-mas ul li {
@@ -95,6 +127,7 @@ main .ver-mas {
     main .ver-mas ul li a {
       text-decoration: none; }
   main .ver-mas ul li:hover {
+<<<<<<< HEAD
     background-color: #292985; }
   main .ver-mas .destacado {
     padding: 10px; }
@@ -102,6 +135,13 @@ main .ver-mas {
 /* estilos catalogo */
 main .catalogo {
   height: 100%;
+=======
+    background-color: #4169b3; }
+  main .ver-mas .destacado {
+    padding: 10px; }
+
+main .catalogo {
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
   align-items: center;
   display: grid;
   grid-template-columns: auto;
@@ -168,6 +208,7 @@ main .categorias-manga-dos {
     display: flex;
     justify-content: center;
     position: sticky; }
+<<<<<<< HEAD
   main .lista-favoritos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -193,6 +234,17 @@ main .categorias-manga-dos {
   main .imagen-destacado img {
     width: 30%; }
   footer {
+=======
+  main .lista-favoritos .img-favorito-uno {
+    width: 30%; }
+  main .lista-favoritos .img-favorito-dos {
+    width: 30%; }
+  main .lista-favoritos .img-favorito-tres {
+    width: 30%; }
+  main .imagen-destacado img {
+    width: 30%; }
+  footer .pie-pagina {
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     display: none; } }
 
 @media screen and (min-width: 426px) and (max-width: 950px) {
@@ -217,15 +269,22 @@ main div .foto-perfil, main .imagen-destacado, main .otros-destacados, main .ver
 main .filtro ul, .paginas-navegador, footer .footer, footer .legal {
   display: flex; }
 
+<<<<<<< HEAD
 main .boton-editar, main .favorito-uno, main .favorito-dos, main .favorito-tres, main .favoritos, main .otros-destacados, main .titulo-manga-uno, main .titulo-manga-dos, .titulo, footer .footer-direccion h4 {
+=======
+main .boton-editar, main .favorito-uno, main .favorito-dos, main .favorito-tres, main .favoritos, main .otros-destacados, main .titulo-manga-uno, main .titulo-manga-dos, .titulo {
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
   text-decoration: underline; }
 
 main div .tamaño-img-carousel {
   width: 25%; }
 
+<<<<<<< HEAD
 footer .footer-direccion h3, footer .footer-direccion h4, footer .legal {
   margin-left: 2rem; }
 
+=======
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
 * {
   color: #cf9e15 !important;
   margin: 0;
@@ -243,7 +302,10 @@ body {
   justify-content: start;
   flex-flow: row wrap; }
   .paginas-navegador ul {
+<<<<<<< HEAD
     margin-top: 1rem;
+=======
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
     display: flex;
     justify-content: start;
     flex-flow: row wrap;
@@ -294,6 +356,7 @@ footer {
     margin-bottom: 2em; }
     footer .footer-direccion h4 {
       margin-top: 1.3em;
+<<<<<<< HEAD
       font-size: 1.3rem; }
     footer .footer-direccion .redes {
       list-style: none; }
@@ -305,3 +368,14 @@ footer {
     font-size: 1.5rem; }
   footer .legal {
     flex-wrap: wrap; }
+=======
+      font-size: 1.2rem; }
+  footer .footer-logo {
+    font-size: 1.5rem; }
+  footer .footer address {
+    font-style: normal;
+    color: #999; }
+  footer .legal {
+    flex-wrap: wrap;
+    color: #999; }
+>>>>>>> d0646666f72955b5652cacbb84839723ce8863d7
