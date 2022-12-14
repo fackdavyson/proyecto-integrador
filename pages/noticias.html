@@ -12,51 +12,60 @@
     <title>Noticias</title>
     <!-- link para los estilos-->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="keywords" content="anime, manga, comics, cartoons">
+    <meta name="Noticias" content="Bluebubble es un foro para amantes de anime, manga, comics, etc, donde puedes organizar tus obras preferidas de ficcion, ver informacion sobre obras que te interesen, crear tu propio perfil y ver las ultimas noticias sobre el mundo geek">
 </head>
 <body>
 
+    
     <header>
-        
-        <!-- etiqueta para el menu de navegacion-->
-        
-        <nav class="menu">
-            
-            <ul>
-                <li class="logo-mobile">
-                <img src="../img/blue-g529684a0f_1280.png" alt="logo" width="55" > <a href="../index.html"> Bluebubble</a></li>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a href="noticias.html">Noticias</a> 
-                </li>
-                <li>
-                    <a href="sobre-nosotros.html">Sobre nosotros</a> 
-                </li>
-                <li>
-                    <a href="mi-perfil.html">Mi perfil</a> 
-                </li>
-            </ul>
-        </nav>
-        <!-- buscador -->
-        <div class="busqueda">
-            <label for="busqueda">Buscar </label>
-            <input type="text" name="busqueda">
-        </div>
+    
+        <!-- menu de navegacion-->
 
+        <nav class="navbar navbar-expand-lg color-header"> 
+          <img src="../img/blue-g529684a0f_1280.png" alt="logo" width="55" >
+          <div class="container-fluid">
+            <a class="navbar-brand nombre-pagina" href="../index.html">Bluebubble</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse gap-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 ">
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton home" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="mi-perfil.html">Mi perfil</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn color-boton" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        Catalogo
+                    </a>
+                    <ul class="dropdown-menu color-boton">
+                      <li><a class="dropdown-item" href="#">Categorias</a></li>
+                      <li><a class="dropdown-item" href="#">Autores</a></li>
+                      <li><a class="dropdown-item" href="#">Año</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex gap-3" role="search">
+                  <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
-
-        <!-- botones para ingresar a tu perfil o registrarse-->
-        
-        <nav class="menu-logueo">
-            <ul>
-                <li>Ingresar</li>
-                <li>Registrarse</li>
-            </ul>
-        </nav>
     </header>
 
     <!-- filtro simple-->
@@ -73,44 +82,37 @@
 
 
     <!-- noticias que se pueden ver en orden cronologico u otras opciones-->
-    
-    <div class="menu-noticias">
-        
-    </div>
-
+  
     <h2 class="titulo ">
             Ultimas noticias
     </h2>
     </div> 
-    <div class="noticias">
-
-        <!-- titulo de la noticia-->
+      <div class="noticias">
         <div class="titulo titulo-uno">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod facere temporibus quae quo sunt sed quis adipisci beatae eaque animi, numquam nesciunt. Hic veniam ut, provident corrupti nostrum perspiciatis?
+          Sayonara, Zetsubou-Sensei lanza su banda sonora en Spotify
         </div>
 
         <div class="img-noticias-uno">
-        <img src="../img/ejemplo-noticia.jpg" alt="noticia-uno" width="300" >
+        <img src="../img/ejemplo-noticia.jpg" alt="noticia-sayonara-zetsubou-sensei" width="300" >
         </div>
         <p class="texto-noticias-uno">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore non nesciunt amet laboriosam? Fugiat libero, atque ducimus mollitia cum eos nulla labore adipisci molestias minima maiores, sunt eligendi magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est modi id illum numquam? Totam sapiente quos fugit, ipsa accusamus minima placeat natus! Saepe expedita ipsam nulla voluptas culpa quos?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nulla, maiores deserunt voluptates nam esse, quas est voluptas delectus tenetur quae adipisci excepturi odit numquam. Deleniti illum molestiae officia vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nihil perferendis soluta atque ipsum. Sed recusandae, iusto non nisi ipsum id laudantium. Amet ipsa necessitatibus velit minus eligendi nihil aut?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore repellat eligendi est, facere distinctio impedit eos fugiat totam ex corporis quidem velit adipisci laudantium at quod. Porro similique culpa quos.
+          En el sitio oficial para la adaptación al anime del manga escrito e ilustrado por Kouji Kumeta, Sayonara, Zetsubou-Sensei se anunció que se ha lanzado la banda sonora de la serie, incluyendo temas musicales, a través de distintas plataformas de distribución, incluyendo Spotify...
         </p>
         <div class="titulo titulo-dos">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quod facere temporibus quae quo sunt sed quis adipisci beatae eaque animi, numquam nesciunt. Hic veniam ut, provident corrupti nostrum perspiciatis?
+          Kouji Kumeta, autor de Kakushigoto, comenzará un nuevo manga este mes
         </div>
 
         <div class="img-noticias-dos">
-        <img src="../img/ejemplo-noticia.jpg" alt="noticia-dos" width="300">
+        <img src="../img/portada_kakushigoto-8.jpg" alt="noticia-autor-kumeta-kakushigoto" width="300">
         </div>
         <p class="texto-noticias-dos">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore non nesciunt amet laboriosam? Fugiat libero, atque ducimus mollitia cum eos nulla labore adipisci molestias minima maiores, sunt eligendi magni.Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est modi id illum numquam? Totam sapiente quos fugit, ipsa accusamus minima placeat natus! Saepe expedita ipsam nulla voluptas culpa quos?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nulla, maiores deserunt voluptates nam esse, quas est voluptas delectus tenetur quae adipisci excepturi odit numquam. Deleniti illum molestiae officia vitae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nihil perferendis soluta atque ipsum. Sed recusandae, iusto non nisi ipsum id laudantium. Amet ipsa necessitatibus velit minus eligendi nihil aut?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eveniet nulla ab distinctio repellendus ratione sequi deleniti. Magnam, dolores vel corrupti nisi odit minima ex porro sit? Nisi, iure consectetur?
+          Un reconocido leaker japonés confirmó que Kouji Kumeta, autor de franquicias como Joshiraku, Kakushigoto y Sayonara Zetsubou Sensei, comenzará la publicación de un nuevo manga titulado “Shibuya Near Family” en la próxima edición de la revista Weekly Shonen Sunday, el 27 de octubre en Japón. Esta es la primera obra del autor después de cinco años desde el estreno de la más reciente. De acuerdo con la filtración, no parece que será una serialización de larga duración.
         </p>
 
 
     </div>
     
+    <!-- navegador de paginas -->
 
     <nav class="paginas-navegador">
         <ul>
@@ -124,17 +126,32 @@
       
     
     </main>
-    <footer>
-        <!--links de contacto-->
 
-        <ul class="pie-pagina"" >
-            <li>Email : ejemplo@gmail.com</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Youtube</li>  
-        </ul>
+    <!-- footer -->
+
+    <footer>
+      <div class="footer">       
+        <div class="footer-direccion">
+          <h3 class="footer-logo">Bluebubble</h3>
+              
+          <h4>Redes sociales</h4>
+          
+            <ul class="redes">
+              <a href="https://twitter.com/home" target="_blank"><img src="../img/twitter-logo.png" alt="pagina-twitter" class="logo-twitter"></a>
+              <a href="https://www.facebook.com/?sk=h_chr" target="_blank"><img src="../img/facebook-logo.png" alt="pagina-facebook" class="logo-facebook"></a>
+            </ul>
+            <div class="legal">
+              <p>&copy; 2022 Derechos reservados</p>
+              
+      
+            </div>
+        </div>
         
-    </footer>
+      </div> 
+      </footer>
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

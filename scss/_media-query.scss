@@ -1,0 +1,119 @@
+
+@media screen and (max-width: 425px){
+    * {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    header{
+        .home{
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+
+    .menu{
+        ul {
+            flex-flow: column wrap;
+            align-items: center;
+        }
+    }
+
+}   
+    main{
+    .noticias{
+        display: flex;
+        flex-flow: column wrap;
+        height: 100%;
+    }
+
+    .catalogo{
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .filtro{
+        display: none;
+    }
+
+    .paginas-navegador{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+    }
+    .lista-favoritos{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: start;
+        align-items: center;
+        grid-template-areas: 
+            "img-favorito-uno favorito-uno "
+            "img-favorito-dos favorito-dos "
+            "img-favorito-tres favorito-tres";
+        }
+        .favorito-uno{
+            grid-area: favorito-uno;
+        }
+        
+        .favorito-dos{
+            grid-area: favorito-dos;
+        }
+        .favorito-tres{
+            grid-area: favorito-tres;
+        }
+        .img-favorito-uno{
+            width: 50%;
+            grid-area: img-favorito-uno;
+        }
+        
+        .img-favorito-dos{
+            width: 50%;
+            grid-area: img-favorito-dos;
+        }
+        
+        .img-favorito-tres{
+            width: 50%;
+            grid-area: img-favorito-tres;
+    
+        }   
+    .imagen-destacado{
+        img{
+            width: 30%;
+        }
+    }
+    
+}
+    footer{
+            display: none;
+    }
+}
+
+@media screen and (min-width : 426px) and (max-width: 950px){
+    * {margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+
+        header{ 
+            .home{
+                display: none;
+            }
+        }
+        .legal{
+            margin-left: auto;
+          }
+    }
+    main{
+
+        .noticias {
+            display: flex;
+            flex-flow: column wrap;
+            height: 100%;
+        }
+        
+        
+    }
+    
+

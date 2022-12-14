@@ -8,96 +8,138 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&     display=swap" rel="stylesheet">
-    <title>Bluebubble</title>
+    <title>Bluebubble - Home</title>
     <!-- link para los estilos-->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="keywords" content="anime, manga, comics, cartoons">
+    <meta name="Noticias" content="Bluebubble es un foro para amantes de anime, manga, comics, etc, donde puedes organizar tus obras preferidas de ficcion, ver informacion sobre obras que te interesen, crear tu propio perfil y ver las ultimas noticias sobre el mundo geek">
 </head>
 <body>
        
-
+          
     <header>
+    
+        <!-- menu de navegacion-->
 
-        
-        <!-- etiqueta para el menu de navegacion-->
-
-          <nav class="menu">
-                <ul>
-                    <li class="logo-mobile">
-                        <img src="img/blue-g529684a0f_1280.png" alt="logo" width="55" > <a href="index.html"> Bluebubble</a></li>
-                    <li>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="pages/catalogo.html">Catalogo</a>
-                    </li>
-                    <li>
-                        <a href="pages/noticias.html">Noticias</a> 
-                    </li>
-                    <li>
-                        <a href="pages/sobre-nosotros.html">Sobre nosotros</a> 
-                    </li>
-                    <li>
-                        <a href="pages/mi-perfil.html">Mi perfil</a> 
-                    </li>
+        <nav class="navbar navbar-expand-lg"> 
+          <img src="img/blue-g529684a0f_1280.png" alt="logo" width="55" >
+            <div class="container-fluid">
+              <a class="navbar-brand nombre-pagina" href="index.html">Bluebubble</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse gap-3 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3" id="color-texto-header">
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="pages/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="pages/sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="pages/mi-perfil.html">Mi perfil</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn color-boton" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        Catalogo
+                    </a>
+                    <ul class="dropdown-menu color-boton">
+                      <li><a class="dropdown-item" href="#">Categorias</a></li>
+                      <li><a class="dropdown-item" href="#">Autores</a></li>
+                      <li><a class="dropdown-item" href="#">Año</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="pages/catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
                 </ul>
-            </nav>
-        <!-- buscador -->
-            <div class="busqueda">
-                <label for="busqueda">Buscar </label>
-                <input type="text" name="busqueda">
+                <form class="d-flex gap-3" role="search">
+                  <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
+              </div>
             </div>
-     <!-- botones para ingresar a tu perfil o registrarse-->
-            <nav class="menu-logueo">
-                <ul>
-                    <li>Ingresar</li>
-                    <li>Registrarse</li>
-                </ul>
-            </nav>
+          </nav>
+
+
     </header>
 
-    <!--aca irian obras populares o recientes -->
+    <!--obras populares y/o recientes -->
 
     <main>
-        <h2 class="titulo">Destacados</h2>
-    <div class="destacado">
+        <h1 class="presentacion">Bienvenido a Bluebubble</h1>
+
+        <h2 class="titulo">Destacado del mes</h2>
+        <div class="destacado">
 
         
-        <h3>Sayonara Zetsubou Sensei</h3>
-        <img src="img/SayonaraZetsubouSensei_vol1_Cover.jpg" alt="ejemplo-destacado">
-
+        <h3 class="titulo">Sayonara Zetsubou Sensei</h3>
+        <div class= "imagen-destacado"><img src="img/SayonaraZetsubouSensei_vol1_Cover.jpg" alt="portada-manga-destacado">
+        </div>
         <h4>Sinopsis</h4>
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quod libero recusandae, voluptates placeat ab asperiores fugit laborum soluta enim ex officia ratione rerum adipisci eaque molestias ipsa, sed eum? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ea officia delectus assumenda, soluta eos quisquam asperiores saepe quis illum nostrum, voluptatibus nemo necessitatibus veritatis ipsam ab corrupti, vitae modi ut!
+        <p >Sayonara Zetsubō Sensei es una serie de manga escrita e ilustrada por Kōji Kumeta. Fue publicado por la revista Weekly Shōnen Magazine. Es una comedia sobre un profesor que se toma todos los aspectos de la vida, de la lengua y de la cultura, del modo más negativo posible.
         </p>
 
         
-    <!-- pequeño vistazo a las obras destacadas-->
+    <!-- pequeño vistazo a la obra destacada del mes-->
+    
     </div>
     <nav class="ver-mas">
         <ul>
-            <li>Ver mas</li>
+            <li><a href="#" target="">Ver mas</a></li>
             <li> 
                 <a href="https://www.youtube.com/watch?v=sEC_O8Ayew0" target="_blank">Ver trailer del anime</a> 
             </li>
         </ul>
     </nav>
+
+    <!-- Otras obras populares -->
+
+    <h4 class="otros-destacados"> Mas obras destacadas </h4>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/a.jpg" class="d-block tamaño-img-carousel" alt="otro-destacado-uno">
+        </div>
+        <div class="carousel-item">
+          <img src="img/b.jpg" class="d-block tamaño-img-carousel" alt="otro-destacado-dos">
+        </div>
+        <div class="carousel-item">
+          <img src="img/c.jpg" class="d-block tamaño-img-carousel" alt="otro-destacado-tres">
+        </div>
+      </div>
+    </div>
     </main>
 
-    
+    <!-- footer -->
 
-    <footer >
-        <!--links de contacto-->
-
-        <ul class="pie-pagina">
-            <li>Email : ejemplo@gmail.com</li>
-   
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Youtube</li>  
-        </ul>
+    <footer>
+      <div class="footer">       
+        <div class="footer-direccion">
+          <h3 class="footer-logo">Bluebubble</h3>
+              
+          <h4>Redes sociales</h4>
+          
+            <ul class="redes">
+              <a href="https://twitter.com/home" target="_blank"><img src="img/twitter-logo.png" alt="pagina-twitter" class="logo-twitter"></a>
+              <a href="https://www.facebook.com/?sk=h_chr" target="_blank"><img src="img/facebook-logo.png" alt="pagina-facebook" class="logo-facebook"></a>
+            </ul>
+            <div class="legal">
+              <p>&copy; 2022 Derechos reservados</p>
+              
+      
+            </div>
+        </div>
         
-    </footer>
+      </div> 
+      </footer>
+    
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>

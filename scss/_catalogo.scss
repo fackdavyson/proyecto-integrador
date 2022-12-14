@@ -1,0 +1,60 @@
+/* estilos catalogo */
+
+main {
+    .catalogo{
+    height: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "img-manga-uno titulo-manga-uno"
+        "img-manga-uno categorias-manga-uno"  
+        "img-manga-uno manga-ejemplo-uno"
+        "img-manga-dos titulo-manga-dos"
+        "img-manga-dos categorias-manga-dos"
+        "img-manga-dos manga-ejemplo-dos";
+    gap: 20px;
+    
+}
+
+.manga-ejemplo-uno{
+    grid-area: manga-ejemplo-uno;
+}
+
+.manga-ejemplo-dos{
+    grid-area: manga-ejemplo-dos;
+}
+.img-manga-uno{
+    grid-area: img-manga-uno;
+    width: 150px;
+}
+.img-manga-dos{
+    grid-area: img-manga-dos;
+    width: 150px;
+}
+
+.titulo-manga-uno{
+    grid-area: titulo-manga-uno;
+    @extend %subrayado-titulo;
+    font-size: 1.5rem;
+}
+
+.titulo-manga-dos{
+    grid-area: titulo-manga-dos;
+    @extend %subrayado-titulo;
+    font-size: 1.5rem;
+}
+
+.categorias-manga-uno{
+    grid-area: categorias-manga-uno;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.categorias-manga-dos{
+    grid-area: categorias-manga-dos;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+}

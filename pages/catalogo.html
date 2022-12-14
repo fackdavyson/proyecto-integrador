@@ -12,69 +12,85 @@
     <title>Catalogo</title>
     <!-- link para los estilos-->
     <link rel="stylesheet" href="../css/style.css">
-    <!-- Link  para animaciones CSS-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta name="keywords" content="anime, manga, comics, cartoons">
+    <meta name="Noticias" content="Bluebubble es un foro para amantes de anime, manga, comics, etc, donde puedes organizar tus obras preferidas de ficcion, ver informacion sobre obras que te interesen, crear tu propio perfil y ver las ultimas noticias sobre el mundo geek">
 </head>
 <body>
     <script>
     AOS.init();
   </script>  
+    
     <header>
+    
+        <!-- menu de navegacion-->
 
-        <!-- etiqueta para el menu de navegacion-->
 
-        <nav class="menu">
-            <ul>
-                <li class="logo-mobile">
-                <img src="../img/blue-g529684a0f_1280.png" alt="logo" width="55" > <a href="../index.html"> Bluebubble</a></li>
-                <li>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a href="noticias.html">Noticias</a> 
-                </li>
-                <li>
-                    <a href="sobre-nosotros.html">Sobre nosotros</a> 
-                </li>
-                <li>
-                    <a href="mi-perfil.html">Mi perfil</a> 
-                </li>
-            </ul>
-        </nav>
-        <!-- buscador -->
-        <div class="busqueda">
-            <label for="busqueda">Buscar </label>
-            <input type="text" name="busqueda">
-        </div>
-    <!-- botones para ingresar a tu perfil o registrarse-->
-        <nav class="menu-logueo">
-            <ul>
-                <li>Ingresar</li>
-                <li>Registrarse</li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg estilo-header"> 
+          <img src="../img/blue-g529684a0f_1280.png" alt="logo" width="55" >
+            <div class="container-fluid">
+              <a class="navbar-brand nombre-pagina" href="../index.html">Bluebubble </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse gap-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 ">
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton home" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="sobre-nosotros.html">Sobre nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn color-boton" href="mi-perfil.html">Mi perfil</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle btn color-boton" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                        Catalogo
+                    </a>
+                    <ul class="dropdown-menu color-boton">
+                      <li><a class="dropdown-item" href="#">Categorias</a></li>
+                      <li><a class="dropdown-item" href="#">Autores</a></li>
+                      <li><a class="dropdown-item" href="#">Año</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="catalogo.html">Ver todo</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex gap-3" role="search">
+                  <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
     </header>
 
     <!--lista de todo el catalogo disponible para explorar-->
+
     <main>
 
     <div class="catalogo">
-            <img src="../img/SayonaraZetsubouSensei_vol1_Cover.jpg" alt="portada-comic/anime/manga"
+            <img src="../img/SayonaraZetsubouSensei_vol1_Cover.jpg" alt="portada-sayonara-zetsubou-sensei"
             class="img-manga-uno">
-            <div class="titulo-manga-uno"> Titulo del comic/manga/anime </div>
-            <p class="categorias-manga-uno">Categorias : etc,etc,etc</p>
-        <p class="manga-ejemplo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam rem unde, minus deserunt sit doloribus ex corrupti dolorum eaque laboriosam, quo aliquid alias non natus delectus, ipsa accusamus dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum delectus aliquid dolore suscipit natus totam quas, optio illo sed officia? Cum ut dolorem sint, porro reprehenderit quo eos rem!</p>
-            <img src="../img/SayonaraZetsubouSensei_vol1_Cover.jpg" alt="portada-comic/anime/manga"
+            <div class="titulo-manga-uno"> Sayonara, Zetsubou-Sensei </div>
+            <p class="categorias-manga-uno">Categorias : Humor negro, Satira, Comentario social</p>
+        <p class="manga-ejemplo-uno">Nozomu Itoshiki desea morir. Desde los primeros rayos de sol hasta la llegada de la noche, todos los esfuerzos de este joven profesor están dedicados a acabar con su vida, sin embargo, no importa si se trata de una cuerda de mala calidad, de una silla que no se mueve, de un revólver averiado o de una navaja sin filo, parece que el destino se entretiene manteniendo a Itoshiki en este mundo.
+          </p>
+            <img src="../img/c.jpg" alt="portada-jojo-bizarre-adventure"
             class="img-manga-dos"> 
-            <div class="titulo-manga-dos"> Titulo del comic/manga/anime </div>
-            <p class="categorias-manga-dos">Categorias : etc,etc,etc</p>
-        <p class="manga-ejemplo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est totam rem unde, minus deserunt sit doloribus ex corrupti dolorum eaque laboriosam, quo aliquid alias non natus delectus, ipsa accusamus dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga illum delectus aliquid dolore suscipit natus totam quas, optio illo sed officia? Cum ut dolorem sint, porro reprehenderit quo eos rem!</p>
+            <div class="titulo-manga-dos"> JoJo's Bizarre Adventure </div>
+            <p class="categorias-manga-dos">Categorias :  Acción, aventura, fantasía</p>
+        <p class="manga-ejemplo-dos">La trama se desarrolla en torno a la historia del linaje Joestar, una poderosa familia de origen británico destinada a combatir fuerzas sobrenaturales malvadas usando poderes adquiridos; la obra abarca varias generaciones de dicho linaje, las cuales son adaptadas en cada parte poniendo un descendiente como protagonista, empezando con Jonathan en el año 1880. Las partes 1 a 6 tienen una historia continua y lineal, mientras que las 7 y 8 ocurren en un universo alterno.</p>
     </div>
 
+    <!-- navegador de paginas--> 
+    
     <nav class="paginas-navegador">
         <ul>
           <li><a href="#">1</a></li>
@@ -86,17 +102,32 @@
       </nav>
 
     </main>
-    <footer>
-        <!--links de contacto-->
 
-        <ul class="pie-pagina">
-            <li>Email : ejemplo@gmail.com</li>  
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Youtube</li>  
-        </ul>
+    <!--footer-->
+
+    <footer>
+      <div class="footer">       
+          <div class="footer-direccion">
+            <h3 class="footer-logo">Bluebubble</h3>
+                
+            <h4>Redes sociales</h4>
+            
+              <ul class="redes">
+                <a href="https://twitter.com/home" target="_blank"><img src="../img/twitter-logo.png" alt="pagina-twitter" class="logo-twitter"></a>
+                <a href="https://www.facebook.com/?sk=h_chr" target="_blank"><img src="../img/facebook-logo.png" alt="pagina-facebook" class="logo-facebook"></a>
+              </ul>
+              <div class="legal">
+                <p>&copy; 2022 Derechos reservados</p>
+                
         
+              </div>
+          </div>
+          
+        </div> 
     </footer>
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 
 </body>
 

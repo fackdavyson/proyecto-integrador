@@ -16,39 +16,42 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="keywords" content="anime, manga, comics, cartoons">
+    <meta name="Noticias" content="Bluebubble es un foro para amantes de anime, manga, comics, etc, donde puedes organizar tus obras preferidas de ficcion, ver informacion sobre obras que te interesen, crear tu propio perfil y ver las ultimas noticias sobre el mundo geek">
 </head>
-<body >
+<body>
 
-    <header class="bg-danger">
+    <header>
     
         <!-- etiqueta para el menu de navegacion-->
 
 
-        <nav class="navbar navbar-expand-lg bg-danger"> 
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Bluebubble</a>
+        <nav class="navbar navbar-expand-lg"> 
+          <img src="../img/blue-g529684a0f_1280.png" alt="logo" width="55" >
+          <div class="container-fluid">
+            <a class="navbar-brand nombre-pagina" href="../index.html">Bluebubble</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse gap-3" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 ">
                   <li class="nav-item">
-                    <a class="nav-link btn btn-primary" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link btn color-boton home" aria-current="page" href="../index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-primary" href="noticias.html">Noticias</a>
+                    <a class="nav-link btn color-boton" href="noticias.html">Noticias</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-primary" href="sobre-nosotros.html">Sobre nosotros</a>
+                    <a class="nav-link btn color-boton" href="sobre-nosotros.html">Sobre nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-primary" href="mi-perfil.html">Mi perfil</a>
+                    <a class="nav-link btn color-boton" href="mi-perfil.html">Mi perfil</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle btn btn-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                    <a class="nav-link dropdown-toggle btn color-boton" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                         Catalogo
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu color-boton">
                       <li><a class="dropdown-item" href="#">Categorias</a></li>
                       <li><a class="dropdown-item" href="#">Autores</a></li>
                       <li><a class="dropdown-item" href="#">Año</a></li>
@@ -59,28 +62,20 @@
                 </ul>
                 <form class="d-flex gap-3" role="search">
                   <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-primary" type="submit">Search</button>
+                  <button class="btn btn-success" type="submit">Search</button>
                 </form>
               </div>
             </div>
           </nav>
-        <!-- botones para ingresar a tu perfil o registrarse-->
 
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="#">Ingresar</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-danger" href="#">Registrarse</a>
-            </li>
-          </ul>
+
     </header>
     
     <!-- presentacion sobre la pagina y los creadores de la misma-->
-      <main data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+      <main>
         
     <div class="row row-cols-3 row-cols-md-2 g-4 gap-5 justify-content-evenly">
-        <div class="card" style="width: 18rem;">
+        <div class="card " style="width: 18rem;">
           <img src="../img/pngaaa.com-1334205.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Quienes somos</h5>
@@ -105,49 +100,60 @@
           </div>
         </div>
       </div>
-    </main>
-    <footer data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
       
-    <!-- formulario de contacto-->
+      <!-- formulario de contacto-->
 
-                <div class="d-grid">
-                <div class="mb-3 p-2">
-                  <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
-                  <input type="text" class="form-control" id="exampleFormControlInput1">
-                </div>
-                <div class="mb-3 p-2">
-                  <label for="exampleFormControlInput1" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                </div>
-                <div class="p-2">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Seleccione su sexo</option>
-                  <option value="1">Masculino</option>
-                  <option value="2">Femenino</option>
-                  <option value="3">Otro</option>
-                </select>
-              </div>
-                <div class="input-group mb-3 p-2">
-                  <div class="input-group-text">
-                    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">Desea recibir noticias en su correo?
-                  </div>
-                </div>
-                
-                <div class="mb-3 p-2">
-                  <label for="exampleFormControlTextarea1" class="form-label">Comentarios/Sugerencias</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </div>
-
-                
-        <!--links de contacto-->
-        <ul class="pie-pagina">
-            <li>Email : ejemplo@gmail.com</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>Youtube</li>  
-        </ul>
+      <div class="d-grid">
+        <div class="mb-3 p-2">
+          <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+        </div>
+        <div class="mb-3 p-2">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="p-2">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Seleccione su sexo</option>
+          <option value="1">Masculino</option>
+          <option value="2">Femenino</option>
+          <option value="3">Otro</option>
+        </select>
+      </div>
+        <div class="input-group mb-3 p-2">
+          <div class="input-group-text">
+            <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">Desea recibir noticias en su correo?
+          </div>
+        </div>
         
+        <div class="mb-3 p-2">
+          <label for="exampleFormControlTextarea1" class="form-label">Comentarios/Sugerencias</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+    </main>
+    <footer>
+                    
+        <!--footer-->
+
+        <div class="footer">       
+          <div class="footer-direccion">
+            <h3 class="footer-logo">Bluebubble</h3>
+                
+            <h4>Redes sociales</h4>
+            
+              <ul class="redes">
+                <a href="https://twitter.com/home" target="_blank"><img src="../img/twitter-logo.png" alt="pagina-twitter" class="logo-twitter"></a>
+                <a href="https://www.facebook.com/?sk=h_chr" target="_blank"><img src="../img/facebook-logo.png" alt="pagina-facebook" class="logo-facebook"></a>
+              </ul>
+              <div class="legal">
+                <p>&copy; 2022 Derechos reservados</p>
+                
+        
+              </div>
+          </div>
+          
+        </div> 
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

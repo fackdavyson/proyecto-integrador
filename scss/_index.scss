@@ -1,0 +1,48 @@
+/* estilos index */
+
+main {
+    .presentacion{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+    .imagen-destacado{
+       @extend %flex-justify-center;
+    }
+    div{
+        .carousel-inner img {
+            margin: auto;
+          }
+        .tamaño-img-carousel{
+            @extend %carousel-img;
+        }
+        
+    }
+        .otros-destacados{
+            @extend %subrayado-titulo;
+            @extend %flex-justify-center;
+        }
+    .ver-mas{
+    text-decoration: none;
+    @extend %flex-justify-center;
+    ul{
+        li{
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 10px 15px 10px;
+            border-style: solid;
+            a{
+                text-decoration: none;
+            }
+        }
+        li:hover{
+            background-color: rgb(41, 41, 133);
+        }
+    }
+    .destacado{
+        padding: 10px;
+    }
+    }
+}
+

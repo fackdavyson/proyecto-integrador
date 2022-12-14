@@ -1,0 +1,64 @@
+/* estilos mi-perfil */
+
+main{
+    div{.foto-perfil{
+        @extend %flex-justify-center;
+    }
+}
+    height: 100%;
+.foto-perfil{
+    border-radius: 50%;
+    width: 20%;
+        display: block;
+        margin: 0 auto;
+}
+.nombre-perfil{
+    text-align: center;
+}
+.boton-editar{
+    @extend %subrayado-titulo;
+    font-size: 1rem;
+}
+.lista-favoritos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 0.5fr 1fr;
+    justify-content: start;
+    align-items: center;
+    grid-template-areas: 
+        "favorito-uno favorito-dos favorito-tres"
+        "img-favorito-uno img-favorito-dos img-favorito-tres";
+    }
+    .favorito-uno{
+        grid-area: favorito-uno;
+        @extend %subrayado-titulo
+    }
+    
+    .favorito-dos{
+        grid-area: favorito-dos;
+        @extend %subrayado-titulo
+    }
+    .favorito-tres{
+        grid-area: favorito-tres;
+        @extend %subrayado-titulo
+    }
+    .img-favorito-uno{
+        width: 50%;
+        grid-area: img-favorito-uno;
+    }
+    
+    .img-favorito-dos{
+        width: 50%;
+        grid-area: img-favorito-dos;
+    }
+    
+    .img-favorito-tres{
+        width: 50%;
+        grid-area: img-favorito-tres;
+
+    }   
+    .favoritos{
+        @extend %subrayado-titulo;
+    }
+}
+

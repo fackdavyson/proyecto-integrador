@@ -1,0 +1,141 @@
+//hojas secundarias
+
+@import "noticias";
+@import "mi-perfil";
+@import "index";
+@import "catalogo";
+@import "media-query";
+
+@import "utilidades/variables";
+@import "utilidades/extend";
+@import "utilidades/mixin";
+
+
+
+*{
+    color: rgb(207, 158, 21)!important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: $fuente;
+    line-height: 1.6;
+}
+
+
+body{
+    background-image: $color-fondo;
+    height: 100%;
+}
+
+.paginas-navegador{
+  @extend %flex-display;
+    justify-content: start;
+    flex-flow: row wrap;
+    
+    ul {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: start;
+        flex-flow: row wrap;
+        text-decoration: none;
+        li{
+        list-style: none;
+        padding: 10px;
+        background-color:$color-boton;
+        }
+    }      
+  }
+
+header{
+    @extend %flex-justify-center;
+    padding: 10px;
+    flex-flow: wrap;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 2;    
+    text-decoration: none;
+    background-color: $color-footer;
+    nav{
+          text-shadow: 1px 1px 1px black;
+      .nombre-pagina{
+          font-size: $titulo-tamaño-fuente; 
+      }
+      div{
+        div{
+          ul{
+            li{
+              .color-boton{
+                background-color: $color-boton;
+              }
+            }
+          }
+        }
+      }
+     }
+
+  }
+
+main {
+    margin: 30px;
+    gap: 10px;
+    text-shadow: 1px 1px 0.5px black;
+}
+
+
+
+
+/*etiqueta general para titulos y subtitulos*/
+
+.titulo{
+    text-align: center;
+    @extend %subrayado-titulo;
+    padding: 10px;
+}
+
+/* estilos del footer*/
+/* hecho con flex*/
+footer{
+  text-shadow: 1px 1px 0.2px black;
+    position: sticky;
+  .footer {
+    @extend %flex-display;
+    flex-flow: row wrap;
+    @include estilos-footer
+  }
+
+  .footer-direccion {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    h3{
+      @extend %margin-footer-left;
+    }
+    h4 {
+        margin-top: 1.3em;
+        font-size: 1.3rem;
+        @extend %margin-footer-left;
+        @extend %subrayado-titulo;
+      }
+    .redes{
+      list-style: none;
+      .logo-twitter{
+        width: 11%;
+        }
+      .logo-facebook{
+        width: 10%;
+      } 
+    }
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  
+  .legal {
+    @extend %flex-display;
+    @extend %margin-footer-left;
+    flex-wrap: wrap;
+  }
+}  
